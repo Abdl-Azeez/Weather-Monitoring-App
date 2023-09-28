@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  z-index: 1;
+  transition: all 1.2s ease-in-out;
+}
+.coldWeather {
+  background-image: url("./images/coldBg.jpg");
+}
+.cloudyWeather {
+  background-image: url("./images/sunnyBg.jpg");
+}
+@media (max-height: 699px) {
+  .wrapper {
+    height: auto;
+  }
+}
+.wrapper:before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wrapper p {
+  font-size: 1.6rem;
+}
+
+.wrapper .search-bar {
+  text-align: center;
+  padding: 1rem;
+}
+
+.wrapper input {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  color: #f8f8f8;
+}
+
+::placeholder {
+  color: #f8f8f8;
+}
+
+.container {
+  max-width: 700px;
+  padding: 0 1rem;
+}
+
+.wrapper .weatherInfo {
+  margin: 1rem auto;
+  transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.wrapper .location p {
+  font-size: 2.4rem;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+}
+.wrapper .temperature {
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 102px;
+  font-weight: 900;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  text-align: center;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .description {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+.wrapper .weather-bottom {
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+}
