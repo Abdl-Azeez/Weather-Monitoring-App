@@ -19,7 +19,7 @@ const WeatherCard = () => {
     const [location, setLocation] = useState("Kuala Lumpur");
 
     // Define OpenWeatherMap API key and base URL
-    const API_KEY = "c8a528f5637999685f0e446a3dcafa9a";
+    const API_KEY = "API_KEY";
     const BASE_URL = "https://api.openweathermap.org/data/2.5/weather";
 
     // Function to handle location search
