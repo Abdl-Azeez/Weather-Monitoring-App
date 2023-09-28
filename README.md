@@ -29,7 +29,7 @@ To deploy this Weather App, follow these steps:
 1. _Clone the Repository:_ Clone this GitHub repository to your local machine.
 
    ```bash
-   git clone https://github.com/abdl-azeez/Weather-Monitoring-App.git
+   git clone https://github.com/Abdl-Azeez/Weather-Monitoring-App.git
 
    ```
 
